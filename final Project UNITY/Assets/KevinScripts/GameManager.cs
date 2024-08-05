@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int wholeTime;
     public float MaxTime;
     public Image O2Bar;
+    public float refillSpeed = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +37,17 @@ public class GameManager : MonoBehaviour
             wholeTime = (int)time;
             O2Text.text = "O2 " + wholeTime;
         }
-    }
+        if (Input.GetKey(KeyCode.B) && time < MaxTime)
+        {
+
+            time += Time.deltaTime * refillSpeed;
+            O2Bar.fillAmount = time / MaxTime;
+            if (time > wholeTime)
+            {
+                wholeTime = (int)time;
+                wholeTime++;
+
+            }
+        }
+     }
 }
