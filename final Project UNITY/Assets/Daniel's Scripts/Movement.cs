@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 3;
+    public float speed = 20;
     public float rotateSpeed = 5;
     public Rigidbody2D myrigidbody;
     public Vector3 left = new Vector3(0,0,80);
