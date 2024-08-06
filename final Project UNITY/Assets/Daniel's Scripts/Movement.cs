@@ -62,6 +62,10 @@ public class Movement : MonoBehaviour
             StartCoroutine(dashTime());
 
         }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         else if (timer > 1.5 && (gamemanger.time < 5))
         {
             noo2.text = ("Not Enough O2");
