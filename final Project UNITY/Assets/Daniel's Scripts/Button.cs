@@ -20,7 +20,7 @@ public class Button : MonoBehaviour
     {
         if(other.CompareTag("Rock")){
             print("yes");
-            other.transform.localScale = new Vector3(1, 0.7f, 1);
+            transform.localScale = new Vector3(1, 0.7f, 1);
             wall.SetActive(false);
 
         }
