@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 public class Movement : MonoBehaviour
 {
-    public float speed = 20;
     public float rotateSpeed = 5;
     public Rigidbody2D myrigidbody;
     public Vector3 left = new Vector3(0,0,80);
@@ -28,12 +27,12 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            myrigidbody.AddForce(transform.right * speed);
+            myrigidbody.AddForce(transform.right * gamemanger.speed);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            myrigidbody.AddForce(transform.right * -speed);
+            myrigidbody.AddForce(transform.right * -gamemanger.speed);
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -63,7 +62,10 @@ public class Movement : MonoBehaviour
             StartCoroutine(dashTime());
 
         }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         else if (timer > 1.5 && (gamemanger.time < 5))
         {
             noo2.text = ("Not Enough O2");

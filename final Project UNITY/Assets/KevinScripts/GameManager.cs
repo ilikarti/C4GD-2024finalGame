@@ -7,11 +7,14 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public TMP_Text O2Text;
+    public TMP_Text speedtext;
+    public TMP_Text maxoxygen;
     public float time = 100;
     public int wholeTime;
     public float MaxTime;
     public Image O2Bar;
     public float refillSpeed = 4;
+    public float speed = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speedtext.text = "Speed: " + speed;
+        maxoxygen.text = "Max O2" + MaxTime;
         if (time > 0)
         {
             time -= Time.deltaTime;
