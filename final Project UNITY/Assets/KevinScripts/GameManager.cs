@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
         }
         else
         { // timer has finished
-            print("you die");
         }
         if (time < wholeTime)
         {

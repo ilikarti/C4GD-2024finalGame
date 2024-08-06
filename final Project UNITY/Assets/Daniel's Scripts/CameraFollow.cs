@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Camera.main.orthographicSize = 7;
+        Camera.main.orthographicSize = 20;
     }
 
     // Update is called once per frame
@@ -18,9 +18,9 @@ public class CameraFollow : MonoBehaviour
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
         if (Input.GetKeyDown(KeyCode.M) && Camera.main.orthographicSize == 20)
         {
-            Camera.main.orthographicSize = 7;
+            Camera.main.orthographicSize = 100;
         }
-        else if (Input.GetKeyDown(KeyCode.M) && Camera.main.orthographicSize == 7)
+        else if (Input.GetKeyDown(KeyCode.M) && Camera.main.orthographicSize == 100)
         {
             Camera.main.orthographicSize = 20;
         }
