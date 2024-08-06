@@ -6,7 +6,7 @@ using TMPro;
 public class powerUp : MonoBehaviour
 {
     private GameManager gamemanger;
-    public TMP_Text infobar;
+    //public TMP_Text infobar;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,17 +27,17 @@ public class powerUp : MonoBehaviour
             gamemanger.speed = gamemanger.speed + 10;
             gamemanger.MaxTime = gamemanger.MaxTime + 10;
             Destroy(gameObject);
-            infobar.text = ("+10 Speed + 10 Max O2");
-            StartCoroutine(hideTime());
+            //infobar.text = ("+10 Speed + 10 Max O2");
+            //StartCoroutine(hideTime());
 
 
 
         }
-        IEnumerator hideTime()
-        {
-            yield return new WaitForSeconds(3f);
-            infobar.text = "";
-        }
+        //IEnumerator hideTime()
+        //{
+           // yield return new WaitForSeconds(3f);
+            //.text = " ";
+       // }
 
     }
 }

@@ -65,7 +65,7 @@ public class Movement : MonoBehaviour
 
         else if (timer > 1.5 && (gamemanger.time < 5))
         {
-            noo2.text = ("Not Enough O2");
+           noo2.text = ("Not Enough O2");
         }
         else
         {
