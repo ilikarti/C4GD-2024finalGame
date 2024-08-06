@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     private GameManager gamemanger;
     public TMP_Text noo2;
     public bool isDashing = false;
+    public float strength = 50f;
     
    
     // Start is called before the first frame update
@@ -36,39 +37,57 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(left*Time.deltaTime);
-            
+            transform.Rotate(left * Time.deltaTime);
+
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(right*Time.deltaTime);
+            transform.Rotate(right * Time.deltaTime);
         }
-        
+
         if (Input.GetKey(KeyCode.Space))
         {
             timer += Time.deltaTime;
-            isDashing = true;
         }
-        else 
+        else
         {
             timer = 0;
             isDashing = false;
         }
-        if (timer > 1.5 &&(gamemanger.time>5))
+        if (timer > 1.5 && (gamemanger.time > 5))
         {
+            myrigidbody.AddForce(transform.right * dashSpeed );
+            isDashing = true;
+            gamemanger.time = gamemanger.time - 1;
             timer = 0;
-            gamemanger.time = gamemanger.time - 5;
-            myrigidbody.AddForce(transform.right * dashSpeed);
+            StartCoroutine(dashTime());
+
         }
-        
-        else if (timer>1.5 && (gamemanger.time < 5))
+
+        /*else if (timer > 1.5 && (gamemanger.time < 5))
         {
             noo2.text = ("Not Enough O2");
-            isDashing = false;
         }
         else
         {
             noo2.text = (" ");
-        }
+        }*/
+        print(isDashing);
     }
+        IEnumerator dashTime()
+        {
+            yield return new WaitForSeconds(0.5f);
+            isDashing = false;
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("moveable") && isDashing == true)
+        {
+            Rigidbody2D moveable = other.gameObject.GetComponent<Rigidbody2D>();
+            Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
+            moveable.AddForce(awayDirection * strength, (ForceMode2D)ForceMode.Impulse);
+        }
+        
+    }
+
 }

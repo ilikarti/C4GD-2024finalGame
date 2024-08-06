@@ -6,6 +6,7 @@ public class collisionManager : MonoBehaviour
 {
     public Rigidbody2D myrigidbody;
     public float strength = 5f;
+    private GameManager manager;
     // Start is called before the first frame update
     void Start()
     {
