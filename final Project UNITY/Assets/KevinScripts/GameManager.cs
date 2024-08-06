@@ -18,29 +18,24 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MaxTime = time;
-        wholeTime = (int)time - 1;
+        time = MaxTime;
+        wholeTime = (int)time;
         O2Text.text = "O2 " + wholeTime;
     }
     // Update is called once per frame
     void Update()
     {
-        speedtext.text = "Speed: " + speed;
-        maxoxygen.text = "Max O2" + MaxTime;
         if (time > 0)
         {
             time -= Time.deltaTime;
             O2Bar.fillAmount = time/MaxTime;
-        }
-        else
-        { // timer has finished
         }
         if (time < wholeTime)
         {
             wholeTime = (int)time;
             O2Text.text = "O2 " + wholeTime;
         }
-        if (Input.GetKey(KeyCode.B) && time < MaxTime+1)
+        if (Input.GetKey(KeyCode.B) && time < MaxTime)
         {
 
             time += Time.deltaTime * refillSpeed;
