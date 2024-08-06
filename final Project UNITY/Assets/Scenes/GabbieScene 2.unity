@@ -860,8 +860,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778621786}
   m_LocalRotation: {x: 0.023604468, y: 0.9992232, z: -0.003003155, w: -0.0314153}
-  m_LocalPosition: {x: 4.92, y: -0.41, z: 8.27}
-  m_LocalScale: {x: 0.25754, y: 0.25754, z: 0.25754}
+  m_LocalPosition: {x: 5.57, y: -0.44, z: 8.23}
+  m_LocalScale: {x: 0.2893977, y: 0.2893977, z: 0.2893977}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1908969605}
@@ -1009,7 +1009,7 @@ Transform:
   m_GameObject: {fileID: 1959101258}
   m_LocalRotation: {x: -0, y: -0, z: 0.059565455, w: 0.99822444}
   m_LocalPosition: {x: 0.64, y: -0.59, z: 8.271023}
-  m_LocalScale: {x: 0.23986, y: 0.23986, z: 0.23986}
+  m_LocalScale: {x: 0.30347088, y: 0.30347088, z: 0.30347088}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1341037134}
@@ -1123,6 +1123,7 @@ MonoBehaviour:
   timer: 0
   noo2: {fileID: 0}
   isDashing: 0
+  strength: 50
 --- !u!50 &2035942376
 Rigidbody2D:
   serializedVersion: 4
