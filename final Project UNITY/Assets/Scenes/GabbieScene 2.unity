@@ -734,6 +734,7 @@ MonoBehaviour:
   wholeTime: 10
   MaxTime: 10
   O2Bar: {fileID: 409283005}
+  refillSpeed: 4
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0

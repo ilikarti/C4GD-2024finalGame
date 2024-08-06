@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
         wholeTime = (int)time - 1;
         O2Text.text = "O2 " + wholeTime;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -36,7 +35,7 @@ public class GameManager : MonoBehaviour
             wholeTime = (int)time;
             O2Text.text = "O2 " + wholeTime;
         }
-        if (Input.GetKey(KeyCode.B) && time < MaxTime)
+        if (Input.GetKey(KeyCode.B) && time < MaxTime+1)
         {
 
             time += Time.deltaTime * refillSpeed;
