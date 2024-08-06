@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Movement : MonoBehaviour
 {
     public float speed = 20;
@@ -12,6 +12,9 @@ public class Movement : MonoBehaviour
     public float dashSpeed = 100000;
     public float timer = 0;
     private GameManager gamemanger;
+    public TMP_Text noo2;
+    public bool isDashing = false;
+    
    
     // Start is called before the first frame update
     void Start()
@@ -44,18 +47,28 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             timer += Time.deltaTime;
+            isDashing = true;
         }
         else 
         {
             timer = 0;
+            isDashing = false;
         }
-
-        if (timer > 1.5)
+        if (timer > 1.5 &&(gamemanger.time>5))
         {
             timer = 0;
-            print("Dashing");
             gamemanger.time = gamemanger.time - 5;
             myrigidbody.AddForce(transform.right * dashSpeed);
+        }
+        
+        else if (timer>1.5 && (gamemanger.time < 5))
+        {
+            noo2.text = ("Not Enough O2");
+            isDashing = false;
+        }
+        else
+        {
+            noo2.text = (" ");
         }
     }
 }

@@ -7,7 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public TMP_Text O2Text;
-    public float time = 10;
+    public float time = 100;
     public int wholeTime;
     public float MaxTime;
     public Image O2Bar;
