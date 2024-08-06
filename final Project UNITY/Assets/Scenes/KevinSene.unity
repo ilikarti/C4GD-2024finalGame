@@ -2668,7 +2668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8124bd9aa5d4eac8e5206f80c0da25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
   rotateSpeed: 5
   myrigidbody: {fileID: 980926189}
   left: {x: 0, y: 0, z: 80}
@@ -5098,11 +5097,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   O2Text: {fileID: 1508921236}
+  speedtext: {fileID: 0}
+  maxoxygen: {fileID: 0}
   time: 30
   wholeTime: 10
   MaxTime: 30
   O2Bar: {fileID: 409283005}
   refillSpeed: 4
+  speed: 20
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
