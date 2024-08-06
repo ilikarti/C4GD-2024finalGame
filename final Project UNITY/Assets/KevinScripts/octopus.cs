@@ -52,7 +52,6 @@ public class octopus : MonoBehaviour
         {
             inRange = false;
         }
-        print(distance);
         track();
     }
 }
