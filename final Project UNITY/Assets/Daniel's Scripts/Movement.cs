@@ -31,6 +31,7 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(left*Time.deltaTime);
+            
         }
         if (Input.GetKey(KeyCode.D))
         {
