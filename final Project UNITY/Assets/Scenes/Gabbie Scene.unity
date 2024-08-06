@@ -3018,7 +3018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60f124afa7da43469725426b4e40bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 980926185}
 --- !u!1001 &1223519957
 PrefabInstance:
   m_ObjectHideFlags: 0
