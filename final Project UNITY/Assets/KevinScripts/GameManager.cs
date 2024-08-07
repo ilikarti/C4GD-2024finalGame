@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public float refillSpeed = 4;
     public float speed = 20;
     public bool isActive = true;
+    public GameObject rock1;
+    public GameObject rock2;
+    public GameObject rock3;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +71,9 @@ public class GameManager : MonoBehaviour
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
         player.transform.position = new Vector3(-12, -7, 0);
+        rock1.transform.position = new Vector3(2.9f, -39f, 0);
+        rock2.transform.position = new Vector3(55f, -70f, 0);
+        rock3.transform.position = new Vector3(86.6f, -88.8f, 0f);
 
     }
 }
