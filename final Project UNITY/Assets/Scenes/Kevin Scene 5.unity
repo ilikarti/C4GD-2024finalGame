@@ -7330,7 +7330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980926185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.6, y: -166.8, z: 0}
+  m_LocalPosition: {x: -7.53, y: -7.92, z: 0}
   m_LocalScale: {x: 0.32311603, y: 0.32311603, z: 0.32311603}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8907,10 +8907,10 @@ MonoBehaviour:
   detectRange: 50
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 247
 --- !u!1001 &1173695026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15876,6 +15876,9 @@ MonoBehaviour:
   refillSpeed: 4
   speed: 10
   isActive: 1
+  rock1: {fileID: 0}
+  rock2: {fileID: 0}
+  rock3: {fileID: 0}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
