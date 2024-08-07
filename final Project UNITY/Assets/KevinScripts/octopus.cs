@@ -10,7 +10,6 @@ public class octopus : MonoBehaviour
     public GameManager gameManager;
     public float speed = 20f;
     public bool inRange = false;
-    private float distance = 0;
     public float detectRange = 50f;
     public LayerMask playerMask;
     public LayerMask layerMask;
