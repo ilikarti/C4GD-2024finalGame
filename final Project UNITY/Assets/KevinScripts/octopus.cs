@@ -11,47 +11,29 @@ public class octopus : MonoBehaviour
     private float distance = 0;
     public bool inRange = false;
     public bool attackRange = false;
-    //Target.position - current position + mag 1 will give the direction to the target
+    public LayerMask layerMask;
+    RaycastHit2D hit;
     void Start()
     {
         player = GameObject.FindObjectOfType<Movement>().gameObject;
         rb = GetComponent<Rigidbody2D>();
+        int layerMask = (LayerMask.GetMask("enemy"));
     }
-    void track()
+    void FireRay()
     {
-        if (inRange == true && attackRange == true)
+        Ray2D ray = new Ray2D(transform.position, player.transform.position - transform.position);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position, 5.0f, layerMask);
+        if (hit)
         {
-            Vector3 towardPlayer = (player.transform.position - transform.position).normalized;
-            rb.AddForce((towardPlayer * speed));
-        }
-        else if (inRange == true )
-        {
-            Vector3 towardPlayer = (player.transform.position - transform.position).normalized;
-            rb.AddForce((towardPlayer * speed));
-        }
-        
-        else
-        {
-            inRange = false;
-        }
-    }
+            print(Vector3.Distance(hit.transform.position, transform.position));
 
-    // Update is called once per frame
-    void Update()
-    {
-        distance = Vector3.Distance(player.transform.position, transform.position);
-        if (distance <= 5)
-        {
-            attackRange = true;
         }
-        else if (distance <= 20)
-        {
-            inRange = true;
-        }
-        else
-        {
-            inRange = false;
-        }
-        track();
+        Debug.DrawRay(ray.origin, ray.direction * 20);
+
     }
+    void FixedUpdate()
+    {
+        FireRay();
+    }
+        // Update is called once per frame
 }
