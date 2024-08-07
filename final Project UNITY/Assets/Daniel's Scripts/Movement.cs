@@ -25,26 +25,26 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)&& gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * gamemanger.speed);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * -gamemanger.speed);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && gamemanger.isActive == true)
         {
             transform.Rotate(left * Time.deltaTime);
 
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && gamemanger.isActive == true)
         {
             transform.Rotate(right * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && gamemanger.isActive == true)
         {
             timer += Time.deltaTime;
         }
