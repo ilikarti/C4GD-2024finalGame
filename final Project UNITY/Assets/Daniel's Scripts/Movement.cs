@@ -91,7 +91,6 @@ public class Movement : MonoBehaviour
         {
 
             {
-                print("oh no");
                 gamemanger.time = (gamemanger.time - 1);
                 timer2 = 0;
             }
