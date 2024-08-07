@@ -10653,6 +10653,7 @@ GameObject:
   - component: {fileID: 1167630902}
   - component: {fileID: 1167630898}
   - component: {fileID: 1167630901}
+  - component: {fileID: 1167630903}
   m_Layer: 0
   m_Name: Octopus
   m_TagString: Untagged
@@ -11295,6 +11296,27 @@ PolygonCollider2D:
       - {x: 3.4300885, y: -0.015044248}
       - {x: 3.4150443, y: -0.030088495}
       - {x: 3.4, y: -0.015044248}
+--- !u!95 &1167630903
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167630894}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef0cd11d8068845b5aecfe230126fa86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1168332824
 PrefabInstance:
   m_ObjectHideFlags: 0
