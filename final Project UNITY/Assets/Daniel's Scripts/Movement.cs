@@ -85,7 +85,12 @@ public class Movement : MonoBehaviour
             Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
             moveable.AddForce(awayDirection * strength, (ForceMode2D)ForceMode.Impulse);
         }
+        if (other.gameObject.CompareTag("Spike")){
+            gamemanger.time--;
+        }
         
     }
+
+   
 
 }

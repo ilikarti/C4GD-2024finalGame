@@ -8,7 +8,7 @@ TagManager:
   - moveable
   - fasterPowerup
   - Rock
-  - Player1
+  - Spike
   layers:
   - Default
   - TransparentFX
