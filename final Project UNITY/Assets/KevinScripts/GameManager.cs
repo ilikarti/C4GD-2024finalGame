@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text O2Text;
     public TMP_Text speedtext;
     public TMP_Text maxoxygen;
-    public float time = 100;
+    public float time = 50;
     public int wholeTime;
     public float MaxTime;
     public Image O2Bar;
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     public void restart()
     {
         isActive = true;
-        time = 30;
+        time = 50;
         gameoverGUI.gameObject.SetActive(false);
         player.transform.position = new Vector3(-12, -7, 0);
 
