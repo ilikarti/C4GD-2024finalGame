@@ -2621,7 +2621,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &340343148
 PrefabInstance:
@@ -3260,7 +3260,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440336916
 GameObject:
@@ -3291,6 +3291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92db1acbaf6cae3429f8ad277f168acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 980926185}
+  gameoverGUI: {fileID: 0}
   O2Text: {fileID: 1508921236}
   speedtext: {fileID: 0}
   maxoxygen: {fileID: 0}
@@ -3300,6 +3302,7 @@ MonoBehaviour:
   O2Bar: {fileID: 409283005}
   refillSpeed: 4
   speed: 20
+  isActive: 1
 --- !u!4 &440336918
 Transform:
   m_ObjectHideFlags: 0
@@ -3313,7 +3316,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &443373282 stripped
 Transform:
@@ -3959,7 +3962,7 @@ Transform:
   - {fileID: 278294773}
   - {fileID: 2033138068}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!1001 &552838675
 PrefabInstance:
@@ -5842,7 +5845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &926999093
 MonoBehaviour:
@@ -6151,7 +6154,7 @@ GameObject:
   - component: {fileID: 980926188}
   - component: {fileID: 980926187}
   - component: {fileID: 980926186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -6321,13 +6324,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980926185}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.67, y: -10.79, z: 0}
-  m_LocalScale: {x: 0.32311603, y: 0.32311603, z: 0.32311603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.010000229, y: 3.5633333, z: 0}
+  m_LocalScale: {x: 0.10770535, y: 0.10770535, z: 0.10770535}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1167630900}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &992748806 stripped
 Transform:
@@ -7449,7 +7452,7 @@ GameObject:
   - component: {fileID: 1167630904}
   - component: {fileID: 1167630903}
   - component: {fileID: 1167630902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Octopus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7561,8 +7564,9 @@ Transform:
   - {fileID: 1907486018}
   - {fileID: 1197157922}
   - {fileID: 1296611940}
+  - {fileID: 980926191}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1167630901
 MonoBehaviour:
@@ -7579,6 +7583,9 @@ MonoBehaviour:
   speed: 0.5
   inRange: 1
   attackRange: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 247
 --- !u!114 &1167630902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7743,7 +7750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197157922}
   - component: {fileID: 1197157923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8377,7 +8384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1296611940}
   - component: {fileID: 1296611941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11631,7 +11638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899542668}
   - component: {fileID: 1899542669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11912,7 +11919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907486018}
   - component: {fileID: 1907486019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12841,7 +12848,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2041583092 stripped
 Transform:
@@ -13227,6 +13234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92db1acbaf6cae3429f8ad277f168acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  gameoverGUI: {fileID: 0}
   O2Text: {fileID: 1508921236}
   speedtext: {fileID: 0}
   maxoxygen: {fileID: 0}
@@ -13236,6 +13245,7 @@ MonoBehaviour:
   O2Bar: {fileID: 409283005}
   refillSpeed: 4
   speed: 10
+  isActive: 1
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0

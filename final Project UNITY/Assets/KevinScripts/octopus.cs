@@ -17,13 +17,12 @@ public class octopus : MonoBehaviour
     {
         player = GameObject.FindObjectOfType<Movement>().gameObject;
         rb = GetComponent<Rigidbody2D>();
-        int layerMask = (LayerMask.GetMask("enemy"));
     }
     void FireRay()
     {
         Ray2D ray = new Ray2D(transform.position, player.transform.position - transform.position);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position, 5.0f, layerMask);
-        if (hit)
+        if (hit && hit.distance < 20)
         {
             print(Vector3.Distance(hit.transform.position, transform.position));
 
