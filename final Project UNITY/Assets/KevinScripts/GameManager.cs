@@ -7,6 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    private BreathingArea breathingarea;
     public GameObject gameoverGUI;
     public TMP_Text O2Text;
     public TMP_Text speedtext;
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        breathingarea = GameObject.Find("Breathing Area").GetComponent<BreathingArea>();
         time = MaxTime;
         wholeTime = (int)time;
         O2Text.text = "O2 " + wholeTime;
@@ -30,7 +32,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         O2Text.text = "O2 " + (int)time;
-        if (time > 0)
+        if (time > 0 && breathingarea.inSafeArea == false)
         {
             time -= Time.deltaTime;
             O2Bar.fillAmount = time/MaxTime;
@@ -44,7 +46,7 @@ public class GameManager : MonoBehaviour
         {
             gameover();
         }
-        if (Input.GetKey(KeyCode.B) && time < MaxTime)
+        if (breathingarea.inSafeArea == true && time < MaxTime)
         {
 
             time += Time.deltaTime * refillSpeed;
