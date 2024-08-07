@@ -5993,7 +5993,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980926185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream:final Project UNITY/Assets/Scenes/Daniel Scene 3.unity
   m_LocalPosition: {x: 33.7, y: -27.4, z: 0}
+=======
+  m_LocalPosition: {x: 39.66, y: -18.82, z: 0}
+>>>>>>> Stashed changes:final Project UNITY/Assets/Scenes/Daniel Scene 2.unity
   m_LocalScale: {x: 0.32311603, y: 0.32311603, z: 0.32311603}
   m_ConstrainProportionsScale: 0
   m_Children: []
