@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour
     private BreathingArea breathingarea;
     public GameObject gameoverGUI;
     public TMP_Text O2Text;
-    public TMP_Text speedtext;
-    public TMP_Text maxoxygen;
     public float time = 50;
     public int wholeTime;
     public float MaxTime;
