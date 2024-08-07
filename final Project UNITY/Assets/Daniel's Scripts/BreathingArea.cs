@@ -7,9 +7,8 @@ public class BreathingArea : MonoBehaviour
     public bool inSafeArea;
     void Update()
     {
-        print(inSafeArea);
         distance = (Vector3.Distance(transform.position, player.transform.position));
-        if (distance < 10)
+        if (distance < 15)
         {
             inSafeArea = true;
         }
