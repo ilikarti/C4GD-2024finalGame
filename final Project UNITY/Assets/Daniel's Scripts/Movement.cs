@@ -14,6 +14,8 @@ public class Movement : MonoBehaviour
     public TMP_Text noo2;
     public bool isDashing = false;
     public float strength = 50f;
+    public float timer2 = 0;
+    public float triggertime = 0.2f;
     
    
     // Start is called before the first frame update
@@ -76,7 +78,7 @@ public class Movement : MonoBehaviour
         {
             yield return new WaitForSeconds(0.5f);
             isDashing = false;
-    }
+        }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("moveable") && isDashing == true)
@@ -85,12 +87,22 @@ public class Movement : MonoBehaviour
             Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
             moveable.AddForce(awayDirection * strength, (ForceMode2D)ForceMode.Impulse);
         }
-        if (other.gameObject.CompareTag("Spike")){
-            gamemanger.time--;
+        if(other.gameObject.CompareTag("Spike") && timer2> triggertime)
+        {
+
+            {
+                print("oh no");
+                gamemanger.time = (gamemanger.time - 1);
+                timer2 = 0;
+            }
+        }
+        else if (other.gameObject.CompareTag("Spike") && timer2 < triggertime)
+        {
+            timer2 += Time.deltaTime;
         }
         
     }
-
+    
    
 
 }

@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
-public class powerUp : MonoBehaviour
+
+public class moreo2powerup : MonoBehaviour
 {
-    public Image powerupicon;
-    public GameObject player;
     private GameManager gamemanger;
-    //public TMP_Text infobar;
+    public GameObject player;
+    public Image powerupicon;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,34 +18,25 @@ public class powerUp : MonoBehaviour
         powerupicon.enabled = false;
 
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            gamemanger.speed = gamemanger.speed + 10;
+            gamemanger.MaxTime = gamemanger.MaxTime + 25;
             Destroy(gameObject);
-            powerupicon.enabled = true;
             player.transform.position = new Vector3(-12, -7, 0);
-            //infobar.text = ("+10 Speed + 10 Max O2");
-            //StartCoroutine(hideTime());
+            powerupicon.enabled = true;
+
+
 
 
 
         }
-        //IEnumerator hideTime()
-        //{
-           // yield return new WaitForSeconds(3f);
-            //.text = " ";
-       // }
-
     }
 }
-
-
-
