@@ -3837,6 +3837,9 @@ MonoBehaviour:
   refillSpeed: 4
   speed: 20
   isActive: 1
+  rock1: {fileID: 0}
+  rock2: {fileID: 0}
+  rock3: {fileID: 0}
 --- !u!4 &440336918
 Transform:
   m_ObjectHideFlags: 0
@@ -7972,8 +7975,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30.81062, y: 20.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8023,7 +8026,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a681f0d4724d94892a4ee98db5382a02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8042,8 +8045,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926999089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.33, y: -28.65, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 43.33, y: -28.25, z: 0}
+  m_LocalScale: {x: 0.054200836, y: 0.054200836, z: 0.054200836}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -19194,6 +19197,9 @@ MonoBehaviour:
   refillSpeed: 4
   speed: 20
   isActive: 1
+  rock1: {fileID: 0}
+  rock2: {fileID: 0}
+  rock3: {fileID: 0}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
