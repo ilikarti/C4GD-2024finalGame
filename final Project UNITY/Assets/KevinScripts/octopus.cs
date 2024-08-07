@@ -7,10 +7,11 @@ public class octopus : MonoBehaviour
     // Start is called before the first frame update
     private Rigidbody2D rb;
     private GameObject player;
-    public float speed = 0.2f;
-    private float distance = 0;
+    public float speed = 40f;
     public bool inRange = false;
-    public bool attackRange = false;
+    private float distance = 0;
+    public float detectRange = 50f;
+
     public LayerMask layerMask;
     RaycastHit2D hit;
     void Start()
@@ -21,18 +22,24 @@ public class octopus : MonoBehaviour
     void FireRay()
     {
         Ray2D ray = new Ray2D(transform.position, player.transform.position - transform.position);
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, player.transform.position - transform.position, 5.0f, layerMask);
-        if (hit && hit.distance < 20)
+        Debug.DrawRay(ray.origin, ray.direction * detectRange);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, detectRange, layerMask);
+        if (hit)
         {
-            print(Vector3.Distance(hit.transform.position, transform.position));
-
+            inRange = true;
         }
-        Debug.DrawRay(ray.origin, ray.direction * 20);
-
     }
     void FixedUpdate()
     {
         FireRay();
     }
-        // Update is called once per frame
+    void Update()
+    {
+        if(inRange == true)
+        {
+            Vector3 awayDirection = ((transform.position + hit.transform.position).normalized);
+            rb.AddForce(awayDirection * speed);
+        }
+    }
+    // Update is called once per frame
 }
