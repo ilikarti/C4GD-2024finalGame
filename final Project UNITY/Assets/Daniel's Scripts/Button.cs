@@ -5,6 +5,7 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     public GameObject wall;
+    public bool isActive;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,15 +15,36 @@ public class Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Rock")){
-            print("yes");
-            transform.localScale = new Vector3(1, 0.7f, 1);
+        if (isActive)
+        {
             wall.SetActive(false);
+        }
+        else
+        {
+            wall.SetActive(true);
+        }
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            isActive = true;
+        }
+    }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            isActive = true;
+        }
 
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Rock"))
+        {
+            isActive = false;
         }
     }
 }
