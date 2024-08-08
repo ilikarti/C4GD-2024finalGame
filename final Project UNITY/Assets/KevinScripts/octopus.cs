@@ -26,6 +26,8 @@ public class octopus : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * detectRange);
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, detectRange, layerMask);
         RaycastHit2D play = Physics2D.Raycast(ray.origin, ray.direction, detectRange, playerMask);
+        print(hit.distance);
+        print(play.distance);
         if (hit && play)
         {
             inRange = true;
@@ -34,11 +36,13 @@ public class octopus : MonoBehaviour
         {
             inRange = false;
         }
+        Quaternion newRotation = Quaternion.Euler(ray.direction);
+        transform.rotation = newRotation;
 
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        gameManager.time = gameManager.time - 1;
+        gameManager.time = gameManager.time - 5;
 
     }
     void FixedUpdate()
@@ -47,9 +51,9 @@ public class octopus : MonoBehaviour
     }
     void Update()
     {
-        if(inRange == true)
+        if (inRange == true)
         {
-            Vector3 awayDirection = (-(transform.position - player.transform.position).normalized);
+            Vector3 awayDirection = ((player.transform.position - transform.position).normalized);
             rb.AddForce(awayDirection * speed);
         }
     }

@@ -22,12 +22,12 @@ public class movingPlat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(st1or2 == 1 && ((transform.position.x >= stop1.x)))
+        if(st1or2 == 1 && (transform.position == stop2))
         {
             StartCoroutine(platWait());
             st1or2 = 3 - st1or2;
         }
-        else if (st1or2 == 2 && (transform.position.normalized == stop2))
+        else if (st1or2 == 2 && (transform.position.normalized == stop1))
         {
             StartCoroutine(platWait());
             st1or2 = 3 - st1or2;
