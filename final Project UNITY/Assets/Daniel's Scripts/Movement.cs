@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 public class Movement : MonoBehaviour
 {
-    public float rotateSpeed = 5;
     public Rigidbody2D myrigidbody;
     public Vector3 left = new Vector3(0,0,80);
     public Vector3 right = new Vector3(0, 0, -80);
@@ -38,12 +37,12 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A) && gamemanger.isActive == true)
         {
-            transform.Rotate(left * Time.deltaTime);
+            transform.Rotate(left * Time.deltaTime * gamemanger.rotateSpeed);
 
         }
         if (Input.GetKey(KeyCode.D) && gamemanger.isActive == true)
         {
-            transform.Rotate(right * Time.deltaTime);
+            transform.Rotate(right * Time.deltaTime * gamemanger.rotateSpeed);
         }
 
         if (Input.GetKey(KeyCode.Space) && gamemanger.isActive == true)
