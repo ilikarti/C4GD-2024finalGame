@@ -2988,11 +2988,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
   m_PrefabInstance: {fileID: 974031046}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &237085687 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5442853831911812364, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
-  m_PrefabInstance: {fileID: 1314281974}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &249159717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
@@ -4599,7 +4594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372541088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.5, y: -52.3, z: 0}
+  m_LocalPosition: {x: 59, y: -51, z: 0}
   m_LocalScale: {x: 4.65, y: 4.6499953, z: 4.6499953}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6893,7 +6888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615447571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.660107, y: -18.478558, z: -14.23385}
+  m_LocalPosition: {x: 7.1, y: -8.7, z: -14.23385}
   m_LocalScale: {x: 2.69, y: 2.69, z: 2.69}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -16021,22 +16016,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
   m_PrefabInstance: {fileID: 1314281974}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1547729320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237085687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9f11b1f897246919e2babd8681f53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  movingRight: 1
-  maxx: 100
-  minx: 120
 --- !u!4 &1548884265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
@@ -21719,7 +21698,7 @@ MonoBehaviour:
   MaxTime: 75
   O2Bar: {fileID: 409283005}
   refillSpeed: 100
-  speed: 10
+  speed: 15
   isActive: 1
   rock1: {fileID: 807448666}
   rock2: {fileID: 615447571}

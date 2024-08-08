@@ -29,20 +29,15 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("moveable"))
         {
             isActive = true;
+            StartCoroutine(openTime());
+
+
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    IEnumerator openTime()
     {
-        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("moveable"))
-        {
-            isActive = true;
-        }
-    }
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("moveable"))
-        {
-            isActive = false;
-        }
+        yield return new WaitForSeconds(10f);
+        isActive = false;
     }
 }
+
