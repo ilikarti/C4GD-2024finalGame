@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        restart();
         breathingarea = GameObject.Find("Breathing Area").GetComponent<BreathingArea>();
         time = MaxTime;
         wholeTime = (int)time;
@@ -76,8 +77,8 @@ public class GameManager : MonoBehaviour
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
         player.transform.position = new Vector3(-12.91f, 10.06f, 0);
-        rock1.transform.position = new Vector3(37f, -50f, 0);
-        rock2.transform.position = new Vector3(72f, -78.2f, 0);
+        rock1.transform.position = new Vector3(48f, -53f, 0);
+        rock2.transform.position = new Vector3(55f, -72f, 0);
         rb4.MovePosition(new Vector3(106.53f, -123.72f));
         rb.MovePosition(new Vector3(0.52f, -1.14f, 0));
         rb2.MovePosition(new Vector3(32.96f, -1.20f,0));
