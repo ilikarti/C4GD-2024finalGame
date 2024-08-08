@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
         rb2.MovePosition(new Vector3(32.96f, -1.20f, 0));
         rb3.MovePosition(new Vector3(40.08f, -21.70f, 0));
         rb4.MovePosition(new Vector3(94f, -98f, 0));
-        badwall1.MovePosition(new Vector3(-59.5f, -86f, 0));
+        badwall1.MovePosition(new Vector3(-61.4f, -64.9f, 0));
         badwall2.MovePosition(new Vector3(-59.5f, -86.7f, 0));//fix this with rock pos
         badwall3.MovePosition(new Vector3(-81.4f, -110.34f, 0));// same as above
     }
