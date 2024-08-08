@@ -11493,6 +11493,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5310722140478591027, guid: afb617545f2f001479b09f4c005a144b, type: 3}
   m_PrefabInstance: {fileID: 588174644}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &588174646 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 588174644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &594027157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33729,7 +33734,7 @@ MonoBehaviour:
   rb: {fileID: 1211641806}
   rb2: {fileID: 1187725116}
   rb3: {fileID: 1521270671}
-  rb4: {fileID: 0}
+  rb4: {fileID: 588174646}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
