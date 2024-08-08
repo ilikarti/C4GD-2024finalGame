@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         isActive = true;
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
-        player.transform.position = new Vector3(-12, 9.9f, 0);
+        player.transform.position = new Vector3(-0.5f, 9.9f, 0);
         rock1.transform.position = new Vector3(37f, -50f, 0);
         rock2.transform.position = new Vector3(72f, -78.2f, 0);
         rb4.MovePosition(new Vector3(106.53f, -123.72f));
