@@ -5,6 +5,7 @@ using TMPro;
 public class Movement : MonoBehaviour
 {
     public Rigidbody2D myrigidbody;
+    public GameObject groundEffectPrefab;
     public Vector3 left = new Vector3(0,0,80);
     public Vector3 right = new Vector3(0, 0, -80);
     public float dashSpeed = 100000;
@@ -80,6 +81,10 @@ public class Movement : MonoBehaviour
         }
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if(isDashing == true)
+        {
+            Instantiate(groundEffectPrefab, transform.position, other.transform.rotation);
+        }
         if (other.gameObject.CompareTag("moveable") && isDashing == true)
         {
             Rigidbody2D moveable = other.gameObject.GetComponent<Rigidbody2D>();
