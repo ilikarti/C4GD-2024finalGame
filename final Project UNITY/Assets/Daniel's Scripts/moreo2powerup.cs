@@ -28,7 +28,7 @@ public class moreo2powerup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            gamemanger.MaxTime = gamemanger.MaxTime + 25;
+            gamemanger.MaxTime = gamemanger.MaxTime + 75;
             Destroy(gameObject);
             player.transform.position = new Vector3(-12, -7, 0);
             powerupicon.enabled = true;
