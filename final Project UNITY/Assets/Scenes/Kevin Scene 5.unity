@@ -9426,8 +9426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8124bd9aa5d4eac8e5206f80c0da25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 5
   myrigidbody: {fileID: 980926189}
+  groundEffectPrefab: {fileID: 5580943533953443776, guid: fe13d3f1cce089c46b4959cc566e5eb3, type: 3}
   left: {x: 0, y: 0, z: 80}
   right: {x: 0, y: 0, z: -80}
   dashSpeed: 7500
@@ -21551,6 +21551,7 @@ MonoBehaviour:
   O2Bar: {fileID: 409283005}
   refillSpeed: 4
   speed: 20
+  rotateSpeed: 1.2
   isActive: 1
   rock1: {fileID: 0}
   rock2: {fileID: 0}
