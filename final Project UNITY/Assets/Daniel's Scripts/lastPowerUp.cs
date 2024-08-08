@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class lastPowerUp : MonoBehaviour
 {
-    public GameManager gamemanger;
+    private GameManager gamemanger;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,8 @@ public class lastPowerUp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (gamemanger.MaxTime>=175 && gamemanger.speed > 30)
+            print("this worked");
+            if (gamemanger.MaxTime>=175 && gamemanger.speed >= 30)
             {
                 Destroy(gameObject);
 
