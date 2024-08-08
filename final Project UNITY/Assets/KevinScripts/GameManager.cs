@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     public GameObject rock1;
     public GameObject rock2;
     public GameObject rock3;
+    public Rigidbody2D rb;
+    public Rigidbody2D rb2;
+    public Rigidbody2D rb3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,9 +75,12 @@ public class GameManager : MonoBehaviour
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
         player.transform.position = new Vector3(-12, -7, 0);
-        rock1.transform.position = new Vector3(2.9f, -39f, 0);
-        rock2.transform.position = new Vector3(55f, -70f, 0);
-        rock3.transform.position = new Vector3(86.6f, -88.8f, 0f);
+        rock1.transform.position = new Vector3(37f, -50f, 0);
+        rock2.transform.position = new Vector3(72f, -78.2f, 0);
+        rock3.transform.position = new Vector3(57.4f, -61, 0f);
+        rb.MovePosition(new Vector3(0.52f, -1.14f, 0));
+        rb2.MovePosition(new Vector3(32.96f, -1.20f,0));
+        rb3.MovePosition(new Vector3(40.08f, -21.70f,0));
 
     }
 }
