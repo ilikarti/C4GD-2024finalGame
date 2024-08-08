@@ -34,7 +34,7 @@ public class Button : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("moveable"))
+        if (other.gameObject.CompareTag("Rock") || other.gameObject.CompareTag("moveable"))
         {
             isActive = false;
         }
