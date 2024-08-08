@@ -55,7 +55,7 @@ public class Movement : MonoBehaviour
             timer = 0;
             isDashing = false;
         }
-        if (timer > 1.5 && (gamemanger.time > 5))
+        if (timer > 1 && (gamemanger.time > 5))
         {
             myrigidbody.AddForce(transform.right * dashSpeed );
             isDashing = true;
