@@ -17,6 +17,7 @@ public class Button : MonoBehaviour
     {
         if (isActive)
         {
+            print("why tf wont you work");
             wall.SetActive(false);
         }
         else
@@ -29,6 +30,7 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("moveable"))
         {
             isActive = true;
+            print("I WANNA GO HOME");
             StartCoroutine(openTime());
 
 
