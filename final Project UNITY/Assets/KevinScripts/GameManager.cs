@@ -78,7 +78,6 @@ public class GameManager : MonoBehaviour
         player.transform.position = new Vector3(-12.91f, 10.06f, 0);
         rock1.transform.position = new Vector3(44f, -55f, 0);
         rock2.transform.position = new Vector3(58f, -69f, 0);
-        rb4.MovePosition(new Vector3(106.53f, -123.72f));
         rb.MovePosition(new Vector3(0.52f, -1.14f, 0));
         rb2.MovePosition(new Vector3(32.96f, -1.20f,0));
         rb3.MovePosition(new Vector3(40.08f, -21.70f,0));
