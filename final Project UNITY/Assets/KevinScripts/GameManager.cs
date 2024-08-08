@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public float MaxTime;
     public Image O2Bar;
     public float refillSpeed = 18;
-    public float speed = 20;
+    public float speed = 15;
     public bool isActive = true;
     public GameObject rock1;
     public GameObject rock2;

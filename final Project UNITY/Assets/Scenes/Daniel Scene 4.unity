@@ -2124,6 +2124,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
   m_PrefabInstance: {fileID: 974031046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &237085687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5442853831911812364, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
+  m_PrefabInstance: {fileID: 1314281974}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &249159717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
@@ -3980,8 +3985,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Push the rock over the button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab17d355ead0b4458b8808bbbf3e7582, type: 2}
+  m_sharedMaterial: {fileID: 3658412154741222021, guid: ab17d355ead0b4458b8808bbbf3e7582, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7771,7 +7776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980926185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.4, y: -59, z: 0}
+  m_LocalPosition: {x: -11, y: 5.1, z: 0}
   m_LocalScale: {x: 0.32311603, y: 0.32311603, z: 0.32311603}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8472,7 +8477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Avoid enemies
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8697,6 +8702,7 @@ GameObject:
   - component: {fileID: 1097120495}
   - component: {fileID: 1097120494}
   - component: {fileID: 1097120493}
+  - component: {fileID: 1097120496}
   m_Layer: 0
   m_Name: Button Circle
   m_TagString: Rock
@@ -8712,7 +8718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097120491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -384.4, y: -345.8, z: 0}
+  m_LocalPosition: {x: -383.8, y: -339.6, z: 0}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8808,6 +8814,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1097120496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097120491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f2652db6aec4bf2b2274e6f5236876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  movingUp: 1
+  maxy: -330
+  miny: -340
 --- !u!1 &1109584090
 GameObject:
   m_ObjectHideFlags: 0
@@ -9915,7 +9937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect the power up
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10401,8 +10423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -4.866, y: 3.733, z: 0.357}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -502.05, y: -266.83}
-  m_SizeDelta: {x: 10, y: 10}
+  m_AnchoredPosition: {x: -502.07568, y: -262.56732}
+  m_SizeDelta: {x: 9.9491, y: 1.4968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286843758
 MonoBehaviour:
@@ -10424,14 +10446,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use W and S to move
+  m_text: 'Use WASD to move
 
-    Use A and D to turn
-
-    Hold space to Dash'
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab17d355ead0b4458b8808bbbf3e7582, type: 2}
+  m_sharedMaterial: {fileID: 3658412154741222021, guid: ab17d355ead0b4458b8808bbbf3e7582, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10491,7 +10511,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 6.1048822}
+  m_margin: {x: 0, y: 0, z: 0, w: 8.101218}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10647,7 +10667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You have limited O2. Actions like dashing reduce o2
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10710,7 +10730,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 7.0240417, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10832,11 +10852,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68.20588
+      value: 63.9
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.655916
+      value: -28.3
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10848,15 +10868,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.50000006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8660253
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10868,13 +10888,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5442853831911812364, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
       propertyPath: m_Name
       value: spike (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 296939999479708074, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
 --- !u!4 &1316618685 stripped
 Transform:
@@ -11927,7 +11948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -378.9, y: -212}
+  m_AnchoredPosition: {x: -771, y: -209}
   m_SizeDelta: {x: 150, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508921236
@@ -12297,6 +12318,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2410626846820288720, guid: 6ca39d7b62021e34db4c57f27ef1a823, type: 3}
   m_PrefabInstance: {fileID: 1314281974}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1547729320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237085687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9f11b1f897246919e2babd8681f53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxx: 100
+  minx: 120
 --- !u!4 &1548884265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
@@ -13574,7 +13610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: -238}
+  m_AnchoredPosition: {x: 34, y: -424}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1725144385 stripped
@@ -14825,10 +14861,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sometimes you have to dash to push an object
+  m_text: "Use Space to dash \nIt helps move heavy objects"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab17d355ead0b4458b8808bbbf3e7582, type: 2}
+  m_sharedMaterial: {fileID: 3658412154741222021, guid: ab17d355ead0b4458b8808bbbf3e7582, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15332,8 +15368,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1940025898}
   - component: {fileID: 1940025897}
-  - component: {fileID: 1940025896}
   - component: {fileID: 1940025899}
+  - component: {fileID: 1940025900}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -15341,21 +15377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1940025896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940025895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9f11b1f897246919e2babd8681f53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  maxx: 100
-  minx: 60
 --- !u!212 &1940025897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15416,7 +15437,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940025895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.7, y: 16.1, z: 0}
+  m_LocalPosition: {x: 145, y: 60, z: 0}
   m_LocalScale: {x: 12.55, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15444,6 +15465,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1940025900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940025895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f2652db6aec4bf2b2274e6f5236876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  movingUp: 1
+  maxy: 100
+  miny: 60
 --- !u!1001 &1942329387
 PrefabInstance:
   m_ObjectHideFlags: 0
