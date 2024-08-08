@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
     public Rigidbody2D rb2;
     public Rigidbody2D rb3;
     public Rigidbody2D rb4;
+    //Rigid bodys are TOP to BOTTOM
+    public Rigidbody2D badwall1;
+    public Rigidbody2D badwall2;
+    public Rigidbody2D badwall3;
 
     // Start is called before the first frame update
     void Start()
@@ -83,5 +87,8 @@ public class GameManager : MonoBehaviour
         rb2.MovePosition(new Vector3(32.96f, -1.20f, 0));
         rb3.MovePosition(new Vector3(40.08f, -21.70f, 0));
         rb4.MovePosition(new Vector3(94f, -98f, 0));
+        badwall1.MovePosition(new Vector3(-59.5f, -86f, 0));
+        badwall2.MovePosition(new Vector3(-59.5f, -86.7f, 0));//fix this with rock pos
+        badwall3.MovePosition(new Vector3(-81.4f, -110.34f, 0));// same as above
     }
 }
