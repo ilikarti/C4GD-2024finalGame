@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         if (time > 0 && breathingarea.inSafeArea == false)
         {
             time -= Time.deltaTime;
-            O2Bar.fillAmount = time/MaxTime;
+            O2Bar.fillAmount = time / MaxTime;
         }
         if (time < wholeTime)
         {
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
 
             }
         }
-     }
+    }
     void gameover()
     {
         gameoverGUI.gameObject.SetActive(true);
@@ -79,8 +79,8 @@ public class GameManager : MonoBehaviour
         rock1.transform.position = new Vector3(44f, -55f, 0);
         rock2.transform.position = new Vector3(58f, -69f, 0);
         rb.MovePosition(new Vector3(0.52f, -1.14f, 0));
-        rb2.MovePosition(new Vector3(32.96f, -1.20f,0));
-        rb3.MovePosition(new Vector3(40.08f, -21.70f,0));
-
+        rb2.MovePosition(new Vector3(32.96f, -1.20f, 0));
+        rb3.MovePosition(new Vector3(40.08f, -21.70f, 0));
+        rb4.MovePosition(new Vector3(94f, -98f, 0));
     }
 }
