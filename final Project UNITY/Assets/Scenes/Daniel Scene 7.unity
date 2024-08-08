@@ -20944,7 +20944,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303824590}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -20956,7 +20956,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 0
 --- !u!61 &1303824593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21743,6 +21743,11 @@ PrefabInstance:
 --- !u!4 &1324060502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5310722140478591027, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 1324060501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1324060503 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
   m_PrefabInstance: {fileID: 1324060501}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1326293198
@@ -22913,7 +22918,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425754853}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -24281,6 +24286,11 @@ PrefabInstance:
 --- !u!4 &1494008977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5310722140478591027, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 1494008976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1494008978 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
   m_PrefabInstance: {fileID: 1494008976}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1495194871
@@ -29058,6 +29068,11 @@ PrefabInstance:
 --- !u!4 &1782085352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5310722140478591027, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 1782085351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1782085353 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
   m_PrefabInstance: {fileID: 1782085351}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1782527527
@@ -34173,6 +34188,9 @@ MonoBehaviour:
   rb2: {fileID: 1187725116}
   rb3: {fileID: 1521270671}
   rb4: {fileID: 588174646}
+  badwall1: {fileID: 1494008978}
+  badwall2: {fileID: 1324060503}
+  badwall3: {fileID: 1782085353}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
