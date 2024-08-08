@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     public float speed = 5;
-    private bool movingRight = true;
+    public bool movingRight = true;
     public float maxx = 100;
     public float minx = 60;
 
@@ -25,7 +25,7 @@ public class MovingPlatform : MonoBehaviour
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
         }
-        else
+        else if(!movingRight)
         {
             transform.Translate(Vector3.left * Time.deltaTime *  speed);
         }
