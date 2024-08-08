@@ -26,8 +26,6 @@ public class octopus : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * detectRange);
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, detectRange, layerMask);
         RaycastHit2D play = Physics2D.Raycast(ray.origin, ray.direction, detectRange, playerMask);
-        print(hit.distance);
-        print(play.distance);
         if (hit && play)
         {
             inRange = true;
@@ -36,8 +34,10 @@ public class octopus : MonoBehaviour
         {
             inRange = false;
         }
+
         Quaternion newRotation = Quaternion.Euler(ray.direction);
-        transform.rotation = newRotation;
+        Quaternion.AngleAxis(hit.distance, ray.direction);
+
 
     }
     private void OnCollisionEnter2D(Collision2D other)
