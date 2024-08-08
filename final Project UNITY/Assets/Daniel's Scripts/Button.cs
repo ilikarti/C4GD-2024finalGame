@@ -32,14 +32,6 @@ public class Button : MonoBehaviour
             isActive = true;
         }
     }
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Rock"))
-        {
-            isActive = true;
-        }
-
-    }
     private void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Rock"))

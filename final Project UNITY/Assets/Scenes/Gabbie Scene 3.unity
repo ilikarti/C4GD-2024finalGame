@@ -1300,7 +1300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_LocalScale.x
@@ -7427,11 +7427,11 @@ MonoBehaviour:
   gameoverGUI: {fileID: 0}
   O2Text: {fileID: 1508921236}
   time: 100
-  wholeTime: 0
-  MaxTime: 0
+  wholeTime: 100
+  MaxTime: 100
   O2Bar: {fileID: 409283005}
   refillSpeed: 4
-  speed: 20
+  speed: 15
   isActive: 1
   rock1: {fileID: 0}
   rock2: {fileID: 0}
@@ -16231,7 +16231,7 @@ MonoBehaviour:
   timer: 0
   noo2: {fileID: 1720528885}
   isDashing: 0
-  strength: 50
+  strength: 100
   timer2: 0
   triggertime: 0.2
 --- !u!4 &980926191
@@ -19201,7 +19201,7 @@ GameObject:
   - component: {fileID: 1167630898}
   - component: {fileID: 1167630901}
   - component: {fileID: 1167630903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Octopus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19312,7 +19312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78dc5f6fb0b2919488fd02298aae6ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 440336917}
   speed: 0.5
   inRange: 1
   detectRange: 50
@@ -19321,7 +19321,7 @@ MonoBehaviour:
     m_Bits: 64
   layerMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 759
 --- !u!60 &1167630902
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20220,7 +20220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197157922}
   - component: {fileID: 1197157923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20802,7 +20802,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1221714335
 GameObject:
@@ -21598,7 +21598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1296611940}
   - component: {fileID: 1296611941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30966,7 +30966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899542668}
   - component: {fileID: 1899542669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31269,7 +31269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907486018}
   - component: {fileID: 1907486019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tent2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
