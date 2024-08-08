@@ -7,7 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
-    private BreathingArea breathingarea;
+    public BreathingArea breathingarea;
     public GameObject gameoverGUI;
     public TMP_Text O2Text;
     public float time = 75;
@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         restart();
-        breathingarea = GameObject.Find("Breathing Area").GetComponent<BreathingArea>();
         time = MaxTime;
         wholeTime = (int)time;
         O2Text.text = "O2 " + wholeTime;

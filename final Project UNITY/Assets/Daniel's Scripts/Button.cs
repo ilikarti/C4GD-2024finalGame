@@ -24,7 +24,13 @@ public class Button : MonoBehaviour
             wall.SetActive(true);
         }
     }
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("moveable"))
+        {
+            isActive = true;
+        }
+    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("moveable"))
