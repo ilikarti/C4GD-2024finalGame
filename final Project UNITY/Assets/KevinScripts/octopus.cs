@@ -34,11 +34,10 @@ public class octopus : MonoBehaviour
         {
             inRange = false;
         }
-
-        Quaternion newRotation = Quaternion.Euler(ray.direction);
-        Quaternion.AngleAxis(hit.distance, ray.direction);
-
-
+        print(ray.direction);
+        Vector3 direction = player.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        rb.rotation = angle;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
