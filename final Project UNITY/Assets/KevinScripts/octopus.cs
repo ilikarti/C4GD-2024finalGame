@@ -34,14 +34,13 @@ public class octopus : MonoBehaviour
         {
             inRange = false;
         }
-        print(ray.direction);
         Vector3 direction = player.transform.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        gameManager.time = gameManager.time - 5;
+        gameManager.time = gameManager.time - 2;
 
     }
     void FixedUpdate()

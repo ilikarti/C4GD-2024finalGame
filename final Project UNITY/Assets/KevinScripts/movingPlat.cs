@@ -21,7 +21,10 @@ public class movingPlat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      /*  float distCovered = (Time.time - startTime) * speed;
+        float journeyLength = Vector3.Distance(stop1, stop2);
+        float fracJourney = distCovered / journeyLength;
+        transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);*/
         Vector3.Lerp(stop1, stop2, 4);
         Vector3.Lerp(stop2, stop1, 4);
     }
