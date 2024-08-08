@@ -10,11 +10,11 @@ public class GameManager : MonoBehaviour
     private BreathingArea breathingarea;
     public GameObject gameoverGUI;
     public TMP_Text O2Text;
-    public float time = 50;
+    public float time = 75;
     public int wholeTime;
     public float MaxTime;
     public Image O2Bar;
-    public float refillSpeed = 4;
+    public float refillSpeed = 18;
     public float speed = 20;
     public bool isActive = true;
     public GameObject rock1;
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Rigidbody2D rb;
     public Rigidbody2D rb2;
     public Rigidbody2D rb3;
+    public Rigidbody2D rb4;
 
     // Start is called before the first frame update
     void Start()
@@ -74,10 +75,10 @@ public class GameManager : MonoBehaviour
         isActive = true;
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
-        player.transform.position = new Vector3(-12, -7, 0);
+        player.transform.position = new Vector3(-12, 9.9f, 0);
         rock1.transform.position = new Vector3(37f, -50f, 0);
         rock2.transform.position = new Vector3(72f, -78.2f, 0);
-        rock3.transform.position = new Vector3(57.4f, -61, 0f);
+        rb4.MovePosition(new Vector3(106.53f, -123.72f));
         rb.MovePosition(new Vector3(0.52f, -1.14f, 0));
         rb2.MovePosition(new Vector3(32.96f, -1.20f,0));
         rb3.MovePosition(new Vector3(40.08f, -21.70f,0));

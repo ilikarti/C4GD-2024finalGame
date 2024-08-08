@@ -3277,7 +3277,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -4826,7 +4826,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -6474,7 +6474,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 2
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -6905,7 +6905,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!212 &865874674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10927,11 +10927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 110.46419
+      value: 109.9
       objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -138.31766
+      value: -141.04
       objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11354,7 +11354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464392922}
   m_LocalRotation: {x: -0.0032851042, y: 0.015092157, z: -0.21266396, w: 0.97700334}
-  m_LocalPosition: {x: 32.9, y: -22.8, z: 0}
+  m_LocalPosition: {x: 31.7, y: -22.5, z: 0}
   m_LocalScale: {x: 2.73, y: 14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12592,7 +12592,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!212 &1587514390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16451,7 +16451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104067121}
   m_LocalRotation: {x: -0.009940618, y: -0.01301314, z: -0.7070369, w: 0.7069871}
-  m_LocalPosition: {x: 65.2, y: -76.9, z: 0}
+  m_LocalPosition: {x: 64.56, y: -76.26, z: 0}
   m_LocalScale: {x: 4, y: 4.8400006, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -16582,9 +16582,9 @@ MonoBehaviour:
   player: {fileID: 980926185}
   gameoverGUI: {fileID: 1312480445}
   O2Text: {fileID: 1508921236}
-  time: 50
-  wholeTime: 50
-  MaxTime: 50
+  time: 75
+  wholeTime: 75
+  MaxTime: 75
   O2Bar: {fileID: 409283005}
   refillSpeed: 4
   speed: 10
@@ -16595,6 +16595,7 @@ MonoBehaviour:
   rb: {fileID: 104644768}
   rb2: {fileID: 1917288912}
   rb3: {fileID: 1097120493}
+  rb4: {fileID: 372541090}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
