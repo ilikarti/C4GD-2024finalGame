@@ -5,6 +5,7 @@ using TMPro;
 public class Movement : MonoBehaviour
 {
     public Rigidbody2D myrigidbody;
+    public ParticleSystem partcles;
     public GameObject groundEffectPrefab;
     public Vector3 left = new Vector3(0,0,80);
     public Vector3 right = new Vector3(0, 0, -80);
@@ -31,11 +32,13 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.W)&& gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * gamemanger.speed);
+            partcles.Play();
         }
 
         if (Input.GetKey(KeyCode.S) && gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * -gamemanger.speed);
+            partcles.Play();
         }
         if (Input.GetKey(KeyCode.A) && gamemanger.isActive == true)
         {
@@ -46,7 +49,10 @@ public class Movement : MonoBehaviour
         {
             transform.Rotate(right * Time.deltaTime * gamemanger.rotateSpeed);
         }
-
+        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+        {
+            partcles.Stop();
+        }
         if (Input.GetKey(KeyCode.Space) && gamemanger.isActive == true)
         {
             timer += Time.deltaTime;

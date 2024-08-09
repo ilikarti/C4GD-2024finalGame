@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class moreo2powerup : MonoBehaviour
@@ -9,6 +10,7 @@ public class moreo2powerup : MonoBehaviour
     private GameManager gamemanger;
     public GameObject player;
     public Image powerupicon;
+    public TMP_Text guide;
 
 
     // Start is called before the first frame update
@@ -33,6 +35,7 @@ public class moreo2powerup : MonoBehaviour
             Destroy(gameObject);
             player.transform.position = new Vector3(-12, -7, 0);
             powerupicon.enabled = true;
+            guide.enabled = true;
 
 
 
