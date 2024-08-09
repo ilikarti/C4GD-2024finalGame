@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
                 backgroundIntense.pitch = 0.9f;
             }
             VFXManager.instance.LowOxegen((time - MaxTime) / MaxTime * VMod, (time - MaxTime)/MaxTime * CMod);
+            print("reached");
         }
         if (time < wholeTime)
         {

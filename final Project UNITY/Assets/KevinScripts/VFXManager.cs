@@ -39,6 +39,7 @@ public class VFXManager : MonoBehaviour
         {
             V.intensity.value = Vintense;
             C.intensity.value = Cintense;
+            print(VFXOn);
         }
     }
 
