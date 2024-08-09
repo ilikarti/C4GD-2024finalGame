@@ -86021,7 +86021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19, y: -8}
+  m_AnchoredPosition: {x: 4, y: -164}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675016895
@@ -105919,6 +105919,8 @@ MonoBehaviour:
   speed: 18
   rotateSpeed: 1
   isActive: 1
+  VMod: 0
+  CMod: 0
   calmMusic: {fileID: 865953235}
   rock1: {fileID: 624799259}
   rock2: {fileID: 1786559015}
