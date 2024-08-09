@@ -21,7 +21,6 @@ public class lastPowerUp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            print("this worked");
             if (gamemanger.MaxTime>=175 && gamemanger.speed >= 30)
             {
                 Destroy(gameObject);
