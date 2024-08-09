@@ -22677,6 +22677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69557602b82211d4cb4726c755363fac, type: 3}
+--- !u!50 &354951481 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 463145026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &355016115
 GameObject:
   m_ObjectHideFlags: 0
@@ -54870,6 +54875,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &925875135 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 1231027746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &927783687
 GameObject:
   m_ObjectHideFlags: 0
@@ -76430,6 +76440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69557602b82211d4cb4726c755363fac, type: 3}
+--- !u!50 &1277299758 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1660790049198743894, guid: afb617545f2f001479b09f4c005a144b, type: 3}
+  m_PrefabInstance: {fileID: 1299391381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1278552900
 GameObject:
   m_ObjectHideFlags: 0
@@ -127842,9 +127857,9 @@ MonoBehaviour:
   rb2: {fileID: 1187725116}
   rb3: {fileID: 1521270671}
   rb4: {fileID: 588174646}
-  badwall1: {fileID: 0}
-  badwall2: {fileID: 0}
-  badwall3: {fileID: 0}
+  badwall1: {fileID: 1277299758}
+  badwall2: {fileID: 354951481}
+  badwall3: {fileID: 925875135}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0
