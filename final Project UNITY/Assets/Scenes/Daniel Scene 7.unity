@@ -1366,6 +1366,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1658121580}
     m_Modifications:
     - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
       propertyPath: detectRange
       value: 20
       objectReference: {fileID: 0}
@@ -33740,6 +33744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1152132849}
     m_Modifications:
+    - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
       propertyPath: detectRange
       value: 14
@@ -78232,6 +78240,10 @@ PrefabInstance:
       value: 261630155
       objectReference: {fileID: 0}
     - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
       propertyPath: detectRange
       value: 20
       objectReference: {fileID: 0}
@@ -115731,6 +115743,10 @@ PrefabInstance:
       value: 261630155
       objectReference: {fileID: 0}
     - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215665947585146601, guid: 864483a34ed46d248a6999f38e45261f, type: 3}
       propertyPath: detectRange
       value: 20
       objectReference: {fileID: 0}
@@ -128508,7 +128524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundCalm: {fileID: 865953235}
   backgroundIntense: {fileID: 1367558756}
-  lose: {fileID: 0}
   player: {fileID: 980926185}
   breathingarea: {fileID: 198325810}
   gameoverGUI: {fileID: 1959564677}
