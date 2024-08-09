@@ -102,16 +102,15 @@ public class GameManager : MonoBehaviour
     {
         gameoverGUI.gameObject.SetActive(true);
         isActive = false;
-        lose.mute = false;
-        lose.time = 0;
-        lose.volume = 0.7f;
+        lose.time = 0.5f;
+        lose.volume = 7f;
 
     }
     public void restart()
     {
         backgroundCalm.time = 0;
         lose.mute = true;
-        isActive = true;
+        lose.volume = 0;
         backgroundCalm.mute = false;
         backgroundCalm.volume = 0.6f;
         time = 50;
