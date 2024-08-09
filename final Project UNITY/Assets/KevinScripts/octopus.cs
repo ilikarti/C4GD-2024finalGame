@@ -8,7 +8,7 @@ public class octopus : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject player;
     public GameManager gameManager;
-    public float speed = 20f;
+    public float speed = 50f;
     public bool inRange = false;
     public float detectRange = 50f;
     public LayerMask playerMask;
