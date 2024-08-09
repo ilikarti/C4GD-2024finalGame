@@ -17124,7 +17124,7 @@ GameObject:
   - component: {fileID: 946777174}
   - component: {fileID: 946777175}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
