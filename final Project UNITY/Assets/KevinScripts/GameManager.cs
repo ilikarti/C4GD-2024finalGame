@@ -6,6 +6,8 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource backgroundCalm;
+    public AudioSource backgroundIntense;
     public GameObject player;
     public BreathingArea breathingarea;
     public GameObject gameoverGUI;
@@ -48,6 +50,30 @@ public class GameManager : MonoBehaviour
         {
             time -= Time.deltaTime;
             O2Bar.fillAmount = time / MaxTime;
+            if(time/MaxTime > 0.5f)
+            {
+                backgroundCalm.volume = (time / MaxTime) * 0.6f;
+            }
+            else
+            {
+                backgroundCalm.volume = (time / MaxTime) * time/MaxTime * 0.9f;
+            }
+            backgroundIntense.volume = 0.4f;
+            if (time < 15f)
+            {
+                backgroundIntense.volume = 1f;
+                backgroundIntense.pitch = 0.7f;
+            }
+            else if (time  < 25f)
+            {
+                backgroundIntense.volume = 0.8f;
+                backgroundIntense.pitch = 0.8f;
+            }
+            else if (time < 30f)
+            {
+                backgroundIntense.volume = 0.6f;
+                backgroundIntense.pitch = 0.9f;
+            }
         }
         if (time < wholeTime)
         {
