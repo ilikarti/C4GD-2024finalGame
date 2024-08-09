@@ -103,12 +103,17 @@ public class GameManager : MonoBehaviour
         gameoverGUI.gameObject.SetActive(true);
         isActive = false;
         lose.mute = false;
+        lose.time = 0;
+        lose.volume = 0.7f;
 
     }
     public void restart()
     {
+        backgroundCalm.time = 0;
         lose.mute = true;
         isActive = true;
+        backgroundCalm.mute = false;
+        backgroundCalm.volume = 0.6f;
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
         player.transform.position = new Vector3(-12.91f, 10.06f, 0);

@@ -32,11 +32,12 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.W)&& gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * gamemanger.speed);
+            AudioManager.instance.PlaySFX(AudioManager.instance.swimming);
         }
 
         if (Input.GetKey(KeyCode.S) && gamemanger.isActive == true)
         {
-            myrigidbody.AddForce(transform.right * -gamemanger.speed);
+            myrigidbody.AddForce(transform.right * -gamemanger.speed/3*2);
         }
         if (Input.GetKey(KeyCode.A) && gamemanger.isActive == true)
         {

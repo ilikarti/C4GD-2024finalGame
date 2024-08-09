@@ -37,6 +37,7 @@ public class moreo2powerup : MonoBehaviour
             powerupicon.enabled = true;
             guide.gameObject.SetActive(true);
             AudioManager.instance.PlaySFX(AudioManager.instance.victory);
+            gamemanger.restart();
 
 
 

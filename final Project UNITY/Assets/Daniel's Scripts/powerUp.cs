@@ -33,6 +33,7 @@ public class powerUp : MonoBehaviour
             powerupicon.enabled = true;
             player.transform.position = new Vector3(-12, -7, 0);
             AudioManager.instance.PlaySFX(AudioManager.instance.victory);
+            gamemanger.restart();
             //infobar.text = ("+10 Speed + 10 Max O2");
             //StartCoroutine(hideTime());
 
