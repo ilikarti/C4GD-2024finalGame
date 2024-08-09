@@ -2950,6 +2950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 980926185}
   powerupicon: {fileID: 1850590329}
+  guide: {fileID: 0}
 --- !u!212 &319956191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9427,6 +9428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myrigidbody: {fileID: 980926189}
+  partcles: {fileID: 0}
   groundEffectPrefab: {fileID: 5580943533953443776, guid: fe13d3f1cce089c46b4959cc566e5eb3, type: 3}
   left: {x: 0, y: 0, z: 80}
   right: {x: 0, y: 0, z: -80}
@@ -9434,6 +9436,7 @@ MonoBehaviour:
   timer: 0
   noo2: {fileID: 1720528885}
   isDashing: 0
+  startTimer: 0
   strength: 50
   timer2: 0
   triggertime: 0.05
@@ -11155,7 +11158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sharedProfile: {fileID: 11400000, guid: af928d965487b7b42b75536825c31364, type: 2}
-  isGlobal: 0
+  isGlobal: 1
   blendDistance: 0
   weight: 1
   priority: 0
@@ -14384,7 +14387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469364909}
-  - component: {fileID: 1469364911}
+  - component: {fileID: 1469364910}
   m_Layer: 0
   m_Name: VFXManager
   m_TagString: Untagged
@@ -14407,7 +14410,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1469364911
+--- !u!114 &1469364910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14416,14 +14419,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1469364908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d262c7ae3a1e984299dc494e728a5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: af928d965487b7b42b75536825c31364, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!4 &1471317471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
@@ -16039,6 +16037,7 @@ MonoBehaviour:
   distance: 0
   player: {fileID: 980926185}
   inSafeArea: 0
+  hasWentDown: 0
 --- !u!4 &1614144845
 Transform:
   m_ObjectHideFlags: 0
@@ -20960,7 +20959,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 0}
+  sharedProfile: {fileID: 11400000, guid: 497df9d7cd13032479dfda761d78b775, type: 2}
 --- !u!4 &2054360377
 Transform:
   m_ObjectHideFlags: 0
@@ -21541,6 +21540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92db1acbaf6cae3429f8ad277f168acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundCalm: {fileID: 0}
+  backgroundIntense: {fileID: 0}
+  lose: {fileID: 0}
   player: {fileID: 980926185}
   breathingarea: {fileID: 0}
   gameoverGUI: {fileID: 1312480445}
@@ -21553,6 +21555,7 @@ MonoBehaviour:
   speed: 20
   rotateSpeed: 1.2
   isActive: 1
+  calmMusic: {fileID: 0}
   rock1: {fileID: 0}
   rock2: {fileID: 0}
   rock3: {fileID: 0}
@@ -21560,6 +21563,9 @@ MonoBehaviour:
   rb2: {fileID: 0}
   rb3: {fileID: 0}
   rb4: {fileID: 0}
+  badwall1: {fileID: 0}
+  badwall2: {fileID: 0}
+  badwall3: {fileID: 0}
 --- !u!4 &2105098109
 Transform:
   m_ObjectHideFlags: 0

@@ -53,11 +53,11 @@ public class GameManager : MonoBehaviour
             O2Bar.fillAmount = time / MaxTime;
             if(time/MaxTime > 0.5f)
             {
-                backgroundCalm.volume = (time / MaxTime) * 0.6f;
+                backgroundCalm.volume = (time / MaxTime) * 0.5f;
             }
             else
             {
-                backgroundCalm.volume = (time / MaxTime) * time/MaxTime * 0.9f;
+                backgroundCalm.volume = (time / MaxTime) * time/MaxTime * 0.7f;
             }
             backgroundIntense.volume = 0.4f;
             if (time < 15f)

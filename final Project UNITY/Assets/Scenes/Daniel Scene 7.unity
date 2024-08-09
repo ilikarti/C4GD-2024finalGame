@@ -5291,7 +5291,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 401279884}
-  m_RootOrder: 52
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -934.791}
 --- !u!212 &67348763
 SpriteRenderer:
@@ -25776,6 +25776,7 @@ Transform:
   - {fileID: 1068127298}
   - {fileID: 12400771}
   - {fileID: 352271288}
+  - {fileID: 67348762}
   - {fileID: 342997419}
   - {fileID: 2041425774}
   - {fileID: 1396340366}
@@ -25791,7 +25792,6 @@ Transform:
   - {fileID: 467436444}
   - {fileID: 1817999568}
   - {fileID: 515553729}
-  - {fileID: 67348762}
   - {fileID: 948872321}
   - {fileID: 907345378}
   - {fileID: 1105294192}
@@ -59378,7 +59378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980926185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.27, y: 1.35, z: 0}
+  m_LocalPosition: {x: -13.9, y: 0.9, z: 0}
   m_LocalScale: {x: 0.32311603, y: 0.32311603, z: 0.32311603}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -98573,6 +98573,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102517,7 +102518,7 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 0
+    enabled: 1
     mode: 0
     ratio: 1
     lifetime:
