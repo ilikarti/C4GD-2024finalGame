@@ -29,10 +29,13 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+        {
+            AudioManager.instance.PlaySFX(AudioManager.instance.swimming);
+        }
         if (Input.GetKey(KeyCode.W)&& gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * gamemanger.speed);
-            AudioManager.instance.PlaySFX(AudioManager.instance.swimming);
         }
 
         if (Input.GetKey(KeyCode.S) && gamemanger.isActive == true)
@@ -93,6 +96,7 @@ public class Movement : MonoBehaviour
     {
         if(isDashing == true)
         {
+            AudioManager.instance.PlaySFX(AudioManager.instance.collision);
             Instantiate(groundEffectPrefab, transform.position, other.transform.rotation);
         }
         if ((other.gameObject.CompareTag("moveable") || other.gameObject.CompareTag("Rock")) && isDashing == true)

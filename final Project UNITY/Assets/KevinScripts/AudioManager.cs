@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance; //singleton
     public AudioSource source;
-    public AudioClip goingDown, pushingBoulder, swimming, victory, lose, dashing;
+    public AudioClip goingDown, pushingBoulder, swimming, victory, lose, dashing, collision;
     // Start is called before the first frame update
     public void PlaySFX(AudioClip clip)
     {
