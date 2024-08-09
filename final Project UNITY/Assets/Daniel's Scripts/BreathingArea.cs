@@ -17,8 +17,6 @@ public class BreathingArea : MonoBehaviour
             {
                 hasWentDown = false;
             }
-            gamemanger.backgroundCalm.volume = 0;
-            gamemanger.backgroundIntense.volume = 0;
         }
         else
         {

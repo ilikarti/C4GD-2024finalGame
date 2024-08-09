@@ -101,16 +101,17 @@ public class Movement : MonoBehaviour
             Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
             moveable.AddForce(awayDirection * strength, (ForceMode2D)ForceMode.Impulse);
         }
-        if(other.gameObject.CompareTag("Spike") && startTimer == false)
+        if(other.gameObject.CompareTag("Spike"))
         {
 
-            {
-                gamemanger.time = (gamemanger.time - 3);
-                Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
-                myrigidbody.AddForce(-awayDirection *50, (ForceMode2D)ForceMode.Impulse);
-                timer2 = 0;
-                startTimer = true;
-            }
+            
+             gamemanger.time = (gamemanger.time - 3);
+             Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
+             myrigidbody.AddForce(-awayDirection *50, (ForceMode2D)ForceMode.Impulse);
+             timer2 = 0;
+             startTimer = true;
+             AudioManager.instance.PlaySFX(AudioManager.instance.pushingBoulder);
+            
         }
         
     }
