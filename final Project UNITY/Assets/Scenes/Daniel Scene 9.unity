@@ -5379,7 +5379,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 401279884}
-  m_RootOrder: 52
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -934.791}
 --- !u!212 &67348763
 SpriteRenderer:
@@ -25957,13 +25957,13 @@ Transform:
   - {fileID: 611415133}
   - {fileID: 2094569797}
   - {fileID: 663984605}
+  - {fileID: 67348762}
   - {fileID: 820839297}
   - {fileID: 1622631679}
   - {fileID: 1452787661}
   - {fileID: 467436444}
   - {fileID: 1817999568}
   - {fileID: 515553729}
-  - {fileID: 67348762}
   - {fileID: 948872321}
   - {fileID: 907345378}
   - {fileID: 1105294192}
