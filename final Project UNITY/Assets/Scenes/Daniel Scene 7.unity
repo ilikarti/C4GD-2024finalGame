@@ -128647,11 +128647,11 @@ MonoBehaviour:
   MaxTime: 100
   O2Bar: {fileID: 409283005}
   refillSpeed: 100
-  speed: 54
+  speed: 65
   rotateSpeed: 1
   isActive: 1
-  VMod: 0.5
-  CMod: 0.5
+  VMod: 0.7
+  CMod: 0.4
   calmMusic: {fileID: 865953235}
   rock1: {fileID: 624799259}
   rock2: {fileID: 1786559015}
