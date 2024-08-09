@@ -19766,7 +19766,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.83, y: 8.48}
   m_EdgeRadius: 0
 --- !u!114 &302250870
 MonoBehaviour:
@@ -25960,7 +25960,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.02, y: 8.15}
   m_EdgeRadius: 0
 --- !u!114 &398073401
 MonoBehaviour:
@@ -26102,6 +26102,7 @@ Transform:
   - {fileID: 2131408634}
   - {fileID: 611415133}
   - {fileID: 2094569797}
+  - {fileID: 681287289}
   - {fileID: 663984605}
   - {fileID: 1330814558}
   - {fileID: 820839297}
@@ -26114,7 +26115,6 @@ Transform:
   - {fileID: 907345378}
   - {fileID: 1105294192}
   - {fileID: 1903005720}
-  - {fileID: 681287289}
   - {fileID: 67348762}
   m_Father: {fileID: 1658121580}
   m_RootOrder: 1
@@ -26427,7 +26427,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.46, y: 7.8}
   m_EdgeRadius: 0
 --- !u!114 &407704944
 MonoBehaviour:
@@ -27723,7 +27723,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.5, y: 7.69}
   m_EdgeRadius: 0
 --- !u!114 &421173922
 MonoBehaviour:
@@ -27737,7 +27737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0431e2d3e5044b85bca04114fa48ab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wall: {fileID: 0}
+  wall: {fileID: 864331548}
   isActive: 0
 --- !u!212 &421173923
 SpriteRenderer:
@@ -29927,7 +29927,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 5.81
 --- !u!1 &460739504
 GameObject:
   m_ObjectHideFlags: 0
@@ -42823,7 +42823,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 401279884}
-  m_RootOrder: 58
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -934.791}
 --- !u!212 &681287290
 SpriteRenderer:
@@ -69392,7 +69392,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 26.24, y: 15.36}
   m_EdgeRadius: 0
 --- !u!114 &1171542923
 MonoBehaviour:
@@ -73021,7 +73021,7 @@ MonoBehaviour:
   source: {fileID: 865953235}
   goingDown: {fileID: 8300000, guid: 6c0bfe877abe02646a25bfaabebb117c, type: 3}
   pushingBoulder: {fileID: 8300000, guid: 43a2426176fc2a24cb0e0e31973755e6, type: 3}
-  swimming: {fileID: 0}
+  swimming: {fileID: 8300000, guid: 09deb4d8ba59b8e4d9034929287a3f6f, type: 3}
   victory: {fileID: 8300000, guid: 8a913df484908b94ebd85f1349a590b0, type: 3}
   lose: {fileID: 8300000, guid: 404027e52fc676949b38c577aaeb50dc, type: 3}
   dashing: {fileID: 8300000, guid: a72e85381fec47e4bb766a245bed9157, type: 3}
@@ -77349,7 +77349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286530571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -387.38, y: -352.09, z: 0}
+  m_LocalPosition: {x: -387.35, y: -352.48, z: 0}
   m_LocalScale: {x: 0.29827622, y: 0.29827622, z: 0.29827622}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -89321,6 +89321,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
   m_PrefabInstance: {fileID: 1495194871}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1498181096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498181097}
+  m_Layer: 0
+  m_Name: Level 2 artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498181097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498181096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 266
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502625040
 GameObject:
   m_ObjectHideFlags: 0
@@ -96644,7 +96675,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.92, y: 7.63}
   m_EdgeRadius: 0
 --- !u!114 &1622146255
 MonoBehaviour:
@@ -104883,7 +104914,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.17, y: 8.04}
   m_EdgeRadius: 0
 --- !u!114 &1693297218
 MonoBehaviour:
@@ -107737,7 +107768,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.17, y: 7.57}
   m_EdgeRadius: 0
 --- !u!114 &1743968288
 MonoBehaviour:
