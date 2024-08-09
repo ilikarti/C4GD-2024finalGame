@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     private GameManager gamemanger;
     public TMP_Text noo2;
     public bool isDashing = false;
+    public bool startTimer = false;
     public float strength = 50f;
     public float timer2 = 0;
     public float triggertime = 0.2f;
@@ -73,6 +74,14 @@ public class Movement : MonoBehaviour
         {
             noo2.text = (" ");
         }
+        if(startTimer == true)
+        {
+            timer2 += Time.deltaTime;
+        }
+        if(timer2 > 0.5f)
+        {
+            startTimer = false;
+        }
     }
         IEnumerator dashTime()
         {
@@ -91,17 +100,16 @@ public class Movement : MonoBehaviour
             Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
             moveable.AddForce(awayDirection * strength, (ForceMode2D)ForceMode.Impulse);
         }
-        if(other.gameObject.CompareTag("Spike") && timer2> triggertime)
+        if(other.gameObject.CompareTag("Spike") && startTimer == false)
         {
 
             {
-                gamemanger.time = (gamemanger.time - 1);
+                gamemanger.time = (gamemanger.time - 3);
+                Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
+                myrigidbody.AddForce(-awayDirection *50, (ForceMode2D)ForceMode.Impulse);
                 timer2 = 0;
+                startTimer = true;
             }
-        }
-        else if (other.gameObject.CompareTag("Spike") && timer2 < triggertime)
-        {
-            timer2 += Time.deltaTime;
         }
         
     }
