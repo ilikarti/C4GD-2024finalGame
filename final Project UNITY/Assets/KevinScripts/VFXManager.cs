@@ -39,7 +39,6 @@ public class VFXManager : MonoBehaviour
         {
             vignette.intensity.value = Vintense;
             Chrome.intensity.value = Cintense;
-            print(VFXOn);
         }
     }
 
