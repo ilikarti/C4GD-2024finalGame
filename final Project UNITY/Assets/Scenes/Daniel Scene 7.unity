@@ -2578,7 +2578,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 401279884}
-  m_RootOrder: 25
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -934.791}
 --- !u!212 &67348763
 SpriteRenderer:
@@ -20320,6 +20320,7 @@ Transform:
   - {fileID: 1049241841}
   - {fileID: 1985060242}
   - {fileID: 1245819561}
+  - {fileID: 67348762}
   - {fileID: 99229397}
   - {fileID: 1435742212}
   - {fileID: 1119867516}
@@ -20328,7 +20329,6 @@ Transform:
   - {fileID: 842314223}
   - {fileID: 1549414664}
   - {fileID: 1640414237}
-  - {fileID: 67348762}
   - {fileID: 270517226}
   - {fileID: 417711658}
   - {fileID: 2062431089}
@@ -105909,7 +105909,7 @@ MonoBehaviour:
   lose: {fileID: 52068541}
   player: {fileID: 980926185}
   breathingarea: {fileID: 198325810}
-  gameoverGUI: {fileID: 0}
+  gameoverGUI: {fileID: 1959564677}
   O2Text: {fileID: 1508921236}
   time: 100
   wholeTime: 100
