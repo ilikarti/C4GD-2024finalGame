@@ -35,7 +35,7 @@ public class moreo2powerup : MonoBehaviour
             Destroy(gameObject);
             player.transform.position = new Vector3(-12, -7, 0);
             powerupicon.enabled = true;
-            guide.enabled = true;
+            guide.gameObject.SetActive(true);
 
 
 
