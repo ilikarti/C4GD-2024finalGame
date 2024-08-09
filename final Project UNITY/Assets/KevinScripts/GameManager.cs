@@ -107,6 +107,8 @@ public class GameManager : MonoBehaviour
         isActive = false;
         lose.time = 0.5f;
         lose.volume = 7f;
+        backgroundCalm.volume = 0;
+        AudioManager.instance.PlaySFX(AudioManager.instance.lose);
 
     }
     public void restart()

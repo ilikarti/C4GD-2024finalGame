@@ -59337,7 +59337,7 @@ MonoBehaviour:
   pushingBoulder: {fileID: 8300000, guid: 43a2426176fc2a24cb0e0e31973755e6, type: 3}
   swimming: {fileID: 8300000, guid: 09deb4d8ba59b8e4d9034929287a3f6f, type: 3}
   victory: {fileID: 8300000, guid: 8a913df484908b94ebd85f1349a590b0, type: 3}
-  lose: {fileID: 8300000, guid: 404027e52fc676949b38c577aaeb50dc, type: 3}
+  lose: {fileID: 8300000, guid: 725a76888d75b9d49b1e7f027e94e09f, type: 3}
   dashing: {fileID: 8300000, guid: b54870e458eaa7d42b182701e799970b, type: 3}
   collision: {fileID: 8300000, guid: a72e85381fec47e4bb766a245bed9157, type: 3}
 --- !u!82 &1220667899
