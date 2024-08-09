@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public float speed = 15;
     public float rotateSpeed = 1.2f;
     public bool isActive = true;
+    public float VMod;
+    public float CMod;
     public AudioSource calmMusic;
     public GameObject rock1;
     public GameObject rock2;
@@ -75,6 +77,7 @@ public class GameManager : MonoBehaviour
                 backgroundIntense.volume = 0.6f;
                 backgroundIntense.pitch = 0.9f;
             }
+            VFXManager.instance.LowOxegen((time - MaxTime) / MaxTime * VMod, (time - MaxTime)/MaxTime * CMod);
         }
         if (time < wholeTime)
         {
