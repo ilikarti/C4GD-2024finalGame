@@ -15,6 +15,9 @@ public class BreathingArea : MonoBehaviour
         else
         {
             inSafeArea = false;
+            AudioManager.instance.PlaySFX(AudioManager.instance.goingDown);
+
         }
     }
+
 }
