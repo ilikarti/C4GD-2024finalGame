@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
     }
     void gameover()
     {
+        VFXManager.instance.LowOxegen(0, 0);
         gameoverGUI.gameObject.SetActive(true);
         isActive = false;
         lose.time = 0.5f;
