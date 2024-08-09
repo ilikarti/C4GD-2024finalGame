@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public AudioSource backgroundCalm;
     public AudioSource backgroundIntense;
+    public AudioSource lose;
     public GameObject player;
     public BreathingArea breathingarea;
     public GameObject gameoverGUI;
@@ -101,9 +102,12 @@ public class GameManager : MonoBehaviour
     {
         gameoverGUI.gameObject.SetActive(true);
         isActive = false;
+        lose.mute = false;
+
     }
     public void restart()
     {
+        lose.mute = true;
         isActive = true;
         time = 50;
         gameoverGUI.gameObject.SetActive(false);
