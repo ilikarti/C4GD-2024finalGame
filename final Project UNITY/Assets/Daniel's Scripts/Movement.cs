@@ -32,13 +32,11 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.W)&& gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * gamemanger.speed);
-            partcles.Play();
         }
 
         if (Input.GetKey(KeyCode.S) && gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * -gamemanger.speed);
-            partcles.Play();
         }
         if (Input.GetKey(KeyCode.A) && gamemanger.isActive == true)
         {
@@ -48,10 +46,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.D) && gamemanger.isActive == true)
         {
             transform.Rotate(right * Time.deltaTime * gamemanger.rotateSpeed);
-        }
-        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
-        {
-            partcles.Stop();
         }
         if (Input.GetKey(KeyCode.Space) && gamemanger.isActive == true)
         {
@@ -68,6 +62,7 @@ public class Movement : MonoBehaviour
             isDashing = true;
             gamemanger.time = gamemanger.time - 1;
             timer = 0;
+            AudioManager.instance.PlaySFX(AudioManager.instance.dashing);
             StartCoroutine(dashTime());
 
         }

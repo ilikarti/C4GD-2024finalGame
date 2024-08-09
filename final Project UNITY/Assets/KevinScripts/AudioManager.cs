@@ -5,8 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance; //singleton
-    private AudioSource source;
-    public AudioClip goingDown, pushingBoulder, swimming, victory, lose;
+    public AudioSource source;
+    public AudioClip goingDown, pushingBoulder, swimming, victory, lose, dashing;
     // Start is called before the first frame update
     public void PlaySFX(AudioClip clip)
     {
