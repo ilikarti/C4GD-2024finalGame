@@ -6558,6 +6558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2466487519170268817, guid: 69557602b82211d4cb4726c755363fac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -9630,6 +9634,7 @@ MonoBehaviour:
   distance: 0
   player: {fileID: 980926185}
   inSafeArea: 0
+  hasWentDown: 0
 --- !u!4 &198325811
 Transform:
   m_ObjectHideFlags: 0
@@ -29158,6 +29163,10 @@ PrefabInstance:
     - target: {fileID: 2466487519170268817, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_Name
       value: Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466487519170268817, guid: 69557602b82211d4cb4726c755363fac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_RootOrder
@@ -86386,6 +86395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (04)
       objectReference: {fileID: 0}
+    - target: {fileID: 2466487519170268817, guid: 69557602b82211d4cb4726c755363fac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2466487519170268844, guid: 69557602b82211d4cb4726c755363fac, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -89280,6 +89293,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92db1acbaf6cae3429f8ad277f168acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundCalm: {fileID: 0}
+  backgroundIntense: {fileID: 0}
+  lose: {fileID: 0}
   player: {fileID: 980926185}
   breathingarea: {fileID: 198325810}
   gameoverGUI: {fileID: 1312480445}
