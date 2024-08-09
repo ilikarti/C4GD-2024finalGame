@@ -114,6 +114,7 @@ public class GameManager : MonoBehaviour
     public void restart()
     {
         backgroundCalm.time = 0;
+        isActive = true;
         lose.mute = true;
         lose.volume = 0;
         backgroundCalm.mute = false;

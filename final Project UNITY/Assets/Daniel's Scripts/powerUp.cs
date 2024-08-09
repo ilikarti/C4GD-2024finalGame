@@ -27,7 +27,7 @@ public class powerUp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            gamemanger.speed = gamemanger.speed + 6;
+            gamemanger.speed = gamemanger.speed + 18;
             gamemanger.rotateSpeed = gamemanger.rotateSpeed + 0.3f;
             Destroy(gameObject);
             powerupicon.enabled = true;
