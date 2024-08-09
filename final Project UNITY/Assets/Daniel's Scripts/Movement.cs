@@ -56,13 +56,12 @@ public class Movement : MonoBehaviour
             timer = 0;
             isDashing = false;
         }
-        if (timer > 1 && (gamemanger.time > 5))
+            if (timer > 1)
         {
             myrigidbody.AddForce(transform.right * dashSpeed );
             isDashing = true;
             gamemanger.time = gamemanger.time - 1;
             timer = 0;
-            AudioManager.instance.PlaySFX(AudioManager.instance.dashing);
             StartCoroutine(dashTime());
 
         }
@@ -95,9 +94,10 @@ public class Movement : MonoBehaviour
         {
             Instantiate(groundEffectPrefab, transform.position, other.transform.rotation);
         }
-        if (other.gameObject.CompareTag("moveable") && isDashing == true)
+        if ((other.gameObject.CompareTag("moveable") || other.gameObject.CompareTag("Rock")) && isDashing == true)
         {
             Rigidbody2D moveable = other.gameObject.GetComponent<Rigidbody2D>();
+            AudioManager.instance.PlaySFX(AudioManager.instance.dashing);
             Vector3 awayDirection = ((other.gameObject.transform.position - transform.position).normalized);
             moveable.AddForce(awayDirection * strength, (ForceMode2D)ForceMode.Impulse);
         }
