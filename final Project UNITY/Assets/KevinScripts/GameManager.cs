@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public AudioSource backgroundCalm;
     public AudioSource backgroundIntense;
-    public AudioSource lose;
     public GameObject player;
     public BreathingArea breathingarea;
     public GameObject gameoverGUI;
@@ -103,21 +102,16 @@ public class GameManager : MonoBehaviour
     }
     void gameover()
     {
-        VFXManager.instance.LowOxegen(0, 0);
         gameoverGUI.gameObject.SetActive(true);
         isActive = false;
-        lose.time = 0.5f;
-        lose.volume = 7f;
         backgroundCalm.volume = 0;
         AudioManager.instance.PlaySFX(AudioManager.instance.lose);
-
+        VFXManager.instance.LowOxegen(0,0);
     }
     public void restart()
     {
         backgroundCalm.time = 0;
         isActive = true;
-        lose.mute = true;
-        lose.volume = 0;
         backgroundCalm.mute = false;
         backgroundCalm.volume = 0.6f;
         time = 50;
