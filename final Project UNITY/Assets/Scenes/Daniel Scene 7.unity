@@ -106176,8 +106176,8 @@ MonoBehaviour:
   speed: 54
   rotateSpeed: 1
   isActive: 1
-  VMod: 0
-  CMod: 0
+  VMod: 0.5
+  CMod: 0.5
   calmMusic: {fileID: 865953235}
   rock1: {fileID: 624799259}
   rock2: {fileID: 1786559015}

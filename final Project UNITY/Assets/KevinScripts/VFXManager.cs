@@ -15,8 +15,8 @@ public class VFXManager : MonoBehaviour
 
     [Header("Particles")] //Just storing the prefabs here for easy access
     public GameObject particleSwim;
-    Vignette V;
-    ChromaticAberration C;
+    Vignette vignette;
+    ChromaticAberration Chrome;
 
     [Header("Screen Effects")] //Post processing
     public Volume volume; //A volume handles post processing effects in Unity
@@ -24,8 +24,8 @@ public class VFXManager : MonoBehaviour
     void Start()
     {
         volume.gameObject.SetActive(VFXOn);
-        volume.profile.TryGet<Vignette>(out V);
-        volume.profile.TryGet<ChromaticAberration>(out C);
+        volume.profile.TryGet<Vignette>(out vignette);
+        volume.profile.TryGet<ChromaticAberration>(out Chrome);
         instance = this; //Setting the singleton
 
     }
@@ -37,8 +37,8 @@ public class VFXManager : MonoBehaviour
     {
         if (VFXOn)
         {
-            V.intensity.value = Vintense;
-            C.intensity.value = Cintense;
+            vignette.intensity.value = Vintense;
+            Chrome.intensity.value = Cintense;
             print(VFXOn);
         }
     }
