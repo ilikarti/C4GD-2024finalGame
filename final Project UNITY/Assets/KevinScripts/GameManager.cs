@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public float speed = 15;
     public float rotateSpeed = 1.2f;
     public bool isActive = true;
+    public AudioSource calmMusic;
     public GameObject rock1;
     public GameObject rock2;
     public GameObject rock3;

@@ -33,14 +33,12 @@ public class Movement : MonoBehaviour
         {
             myrigidbody.AddForce(transform.right * gamemanger.speed);
             partcles.Play();
-            AudioManager.instance.PlaySFX(AudioManager.instance.goingDown);
         }
 
         if (Input.GetKey(KeyCode.S) && gamemanger.isActive == true)
         {
             myrigidbody.AddForce(transform.right * -gamemanger.speed);
             partcles.Play();
-            AudioManager.instance.PlaySFX(AudioManager.instance.goingDown);
         }
         if (Input.GetKey(KeyCode.A) && gamemanger.isActive == true)
         {
